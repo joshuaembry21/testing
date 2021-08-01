@@ -1,0 +1,594 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>src.Plotting package &mdash; ippf  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="src.ProductionFactor package" href="src.ProductionFactor.html" />
+    <link rel="prev" title="src.Modeling package" href="src.Modeling.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ippf
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Initial_Production_Prediction_Model</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="cli_data_access.html">cli_data_access module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cli_data_ingestion.html">cli_data_ingestion module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cli_krig.html">cli_krig module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cli_modeling.html">cli_modeling module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cli_production_factor_analysis.html">cli_production_factor_analysis module</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="src.html">src package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="src.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="src.Data.html">src.Data package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="src.Economics.html">src.Economics package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="src.Logging.html">src.Logging package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="src.Modeling.html">src.Modeling package</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">src.Plotting package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="src.ProductionFactor.html">src.ProductionFactor package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="src.temp_scripts.html">src.temp_scripts package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="src.html#module-src">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tests.html">tests package</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ippf</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">Initial_Production_Prediction_Model</a> &raquo;</li>
+        
+          <li><a href="src.html">src package</a> &raquo;</li>
+        
+      <li>src.Plotting package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/src.Plotting.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="src-plotting-package">
+<h1>src.Plotting package<a class="headerlink" href="#src-plotting-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="src-plotting-case-study-maps-module">
+<h2>src.Plotting.case_study_maps module<a class="headerlink" href="#src-plotting-case-study-maps-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="src-plotting-case-study-plots-module">
+<h2>src.Plotting.case_study_plots module<a class="headerlink" href="#src-plotting-case-study-plots-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="src-plotting-completion-data-analysis-module">
+<h2>src.Plotting.completion_data_analysis module<a class="headerlink" href="#src-plotting-completion-data-analysis-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-src.Plotting.plotting_functions_data_analysis">
+<span id="src-plotting-plotting-functions-data-analysis-module"></span><h2>src.Plotting.plotting_functions_data_analysis module<a class="headerlink" href="#module-src.Plotting.plotting_functions_data_analysis" title="Permalink to this headline">¶</a></h2>
+<p>Plotting functions for initial data analysis</p>
+<p>&#64;author: Any Ordonez</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="src.Plotting.plotting_functions_data_analysis.category_map">
+<span class="sig-prename descclassname"><span class="pre">src.Plotting.plotting_functions_data_analysis.</span></span><span class="sig-name descname"><span class="pre">category_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ols_df</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prod_zone</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_map</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">matplotlib.figure.Figure</span></span></span><a class="headerlink" href="#src.Plotting.plotting_functions_data_analysis.category_map" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>arg:</dt><dd><p>ols_df: one-line summary dataframe
+prod_zone: Producing zone name
+category: ‘DI Subplay’ | ‘DI Play’ | ‘Production Type’
+color_map: ‘tab20’ | ‘tab10’</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>fig</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.Plotting.plotting_functions_data_analysis.gor_map">
+<span class="sig-prename descclassname"><span class="pre">src.Plotting.plotting_functions_data_analysis.</span></span><span class="sig-name descname"><span class="pre">gor_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ols_df</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prod_zone</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_quantile</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">matplotlib.figure.Figure</span></span></span><a class="headerlink" href="#src.Plotting.plotting_functions_data_analysis.gor_map" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>arg:</dt><dd><p>ols_df: one-line summary dataframe
+prod_zone: producing zone
+category: column with GOR data (e.g. ‘2nd Month GOR’)
+max_quantile: maximum quantile used for limiting outliers</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>GOR map</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>fig</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.Plotting.plotting_functions_data_analysis.ippf_map">
+<span class="sig-prename descclassname"><span class="pre">src.Plotting.plotting_functions_data_analysis.</span></span><span class="sig-name descname"><span class="pre">ippf_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ols_df</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prod_zone</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_quantile</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">matplotlib.figure.Figure</span></span></span><a class="headerlink" href="#src.Plotting.plotting_functions_data_analysis.ippf_map" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>arg:</dt><dd><p>ols_df: one-line summary dataframe
+prod_zone: producing zone
+category: column name with ippf data (e.g. ‘Peak Oil per Foot’)
+max_quantile: maximum quantile used for limiting outliers</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>ippf map</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>fig</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.Plotting.plotting_functions_data_analysis.lat_len_map">
+<span class="sig-prename descclassname"><span class="pre">src.Plotting.plotting_functions_data_analysis.</span></span><span class="sig-name descname"><span class="pre">lat_len_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ols_df</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_quantile</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">matplotlib.figure.Figure</span></span></span><a class="headerlink" href="#src.Plotting.plotting_functions_data_analysis.lat_len_map" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>arg:</dt><dd><p>ols_df: one-line summary dataframe
+category: column with lateral length data (e.g. ‘DI Lateral Length’)
+max_quantile: a number between 0.9 and 1 used to truncate map scale and avoid showing outliers</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>lateral length distribution map</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>fig</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<p>fig = lat_len_map(ols_df, ‘DI Lateral Length’, 0.995)</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.Plotting.plotting_functions_data_analysis.plot_boxplot_by_group">
+<span class="sig-prename descclassname"><span class="pre">src.Plotting.plotting_functions_data_analysis.</span></span><span class="sig-name descname"><span class="pre">plot_boxplot_by_group</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ols_df</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_units</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">matplotlib.figure.Figure</span><span class="p"><span class="pre">,</span> </span><span class="pre">pandas.core.frame.DataFrame</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.Plotting.plotting_functions_data_analysis.plot_boxplot_by_group" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>arg:</dt><dd><p>dataF: one-line summary dataframe
+varName: variable name (column) to plot
+category: category to group data
+varUnits: variable units</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Boxplot grouped by category
+stats_df</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>fig</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.Plotting.plotting_functions_data_analysis.plot_cat_hist">
+<span class="sig-prename descclassname"><span class="pre">src.Plotting.plotting_functions_data_analysis.</span></span><span class="sig-name descname"><span class="pre">plot_cat_hist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ols_df</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort_data</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort_ascending</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">matplotlib.figure.Figure</span></span></span><a class="headerlink" href="#src.Plotting.plotting_functions_data_analysis.plot_cat_hist" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>arg:</dt><dd><p>ols_df: One-line summary dataframe
+var_name: variable name (column) with categorical data (e.g.: ‘DI Landing Zone’)
+sort_data: True or False. Default: False (unsorted)
+sort_ascending: True or False. Default: False (descending - if sorted)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>figure with categorical histogram</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>fig</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.Plotting.plotting_functions_data_analysis.plot_num_hist">
+<span class="sig-prename descclassname"><span class="pre">src.Plotting.plotting_functions_data_analysis.</span></span><span class="sig-name descname"><span class="pre">plot_num_hist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ols_df</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_units</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_bins</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">matplotlib.figure.Figure</span></span></span><a class="headerlink" href="#src.Plotting.plotting_functions_data_analysis.plot_num_hist" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>arg:</dt><dd><p>dataF: one-line summary dataframe
+varName: variable name (column) with numerical data
+varUnits: data units
+numBins: number of bins</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>figure with a numerical histogram</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>fig</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.Plotting.plotting_functions_data_analysis.plot_peak_month_box_plot">
+<span class="sig-prename descclassname"><span class="pre">src.Plotting.plotting_functions_data_analysis.</span></span><span class="sig-name descname"><span class="pre">plot_peak_month_box_plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ols_df</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">,</span> </span><span class="pre">matplotlib.figure.Figure</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.Plotting.plotting_functions_data_analysis.plot_peak_month_box_plot" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>arg:</dt><dd><p>dataF: One-line summary dataframe
+varName: column name for Peak Month Number (e.g.: ‘Peak Oil Month No.’)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Peak Month Boxplot - Single &amp; Horizontal
+Percentiles</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.Plotting.plotting_functions_data_analysis.plot_peak_month_boxplot_by_group">
+<span class="sig-prename descclassname"><span class="pre">src.Plotting.plotting_functions_data_analysis.</span></span><span class="sig-name descname"><span class="pre">plot_peak_month_boxplot_by_group</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ols_df</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">pandas.core.frame.DataFrame</span><span class="p"><span class="pre">,</span> </span><span class="pre">matplotlib.figure.Figure</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.Plotting.plotting_functions_data_analysis.plot_peak_month_boxplot_by_group" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>arg:</dt><dd><p>ols_df: One-line summary dataframe
+var_name: column name for Peak Month (e.g.: ‘Peak Oil Month No.’)
+category: column name with categorical data (e.g.: ‘Firts Prod Year’)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>summary of descriptive statistics by category
+Peak Month Boxplot - Vertical &amp; Grouped by Categories</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>peak_month_stats_df</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.Plotting.plotting_functions_data_analysis.plot_peak_month_hist">
+<span class="sig-prename descclassname"><span class="pre">src.Plotting.plotting_functions_data_analysis.</span></span><span class="sig-name descname"><span class="pre">plot_peak_month_hist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ols_df</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_bins</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">,</span> </span><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">,</span> </span><span class="pre">matplotlib.figure.Figure</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.Plotting.plotting_functions_data_analysis.plot_peak_month_hist" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dataF</strong> – One-line summary dataframe</p></li>
+<li><p><strong>varName</strong> – Column name for Peak Month Number (e.g. ‘Peak Oil Month No.’)</p></li>
+<li><p><strong>max_bins</strong> – maximum number of bins/months (e.g. maximum number of months + 1)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>figure with Peak Month histogram
+counts, bin_edges</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>fig</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.Plotting.plotting_functions_data_analysis.save_pdf_plots">
+<span class="sig-prename descclassname"><span class="pre">src.Plotting.plotting_functions_data_analysis.</span></span><span class="sig-name descname"><span class="pre">save_pdf_plots</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pdf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figs_dict</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fluid</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_plots</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#src.Plotting.plotting_functions_data_analysis.save_pdf_plots" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-src.Plotting.plotting_functions_modeling_results">
+<span id="src-plotting-plotting-functions-modeling-results-module"></span><h2>src.Plotting.plotting_functions_modeling_results module<a class="headerlink" href="#module-src.Plotting.plotting_functions_modeling_results" title="Permalink to this headline">¶</a></h2>
+<p>Modeling results and plots</p>
+<p>&#64;author: Any Ordonez</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="src.Plotting.plotting_functions_modeling_results.actual_vs_predicted_plot">
+<span class="sig-prename descclassname"><span class="pre">src.Plotting.plotting_functions_modeling_results.</span></span><span class="sig-name descname"><span class="pre">actual_vs_predicted_plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_dict</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_dict</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modeling_group</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_type</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">last_run_date</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#src.Plotting.plotting_functions_modeling_results.actual_vs_predicted_plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>This plot shows the predicted values on the vertical axis and the actual values on the
+horizontal axis for a given modeling group and label</p>
+<dl class="simple">
+<dt>plot_type:</dt><dd><p>‘single’ - last time frame
+‘multiple’ - evolution over time</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.Plotting.plotting_functions_modeling_results.feature_importance_ensemble_plot">
+<span class="sig-prename descclassname"><span class="pre">src.Plotting.plotting_functions_modeling_results.</span></span><span class="sig-name descname"><span class="pre">feature_importance_ensemble_plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f_scores</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modeling_group</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalized_score</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#src.Plotting.plotting_functions_modeling_results.feature_importance_ensemble_plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>This plot shows the feature importance scores in a bar chart (for the Ensemble model)</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.Plotting.plotting_functions_modeling_results.feature_importance_plot">
+<span class="sig-prename descclassname"><span class="pre">src.Plotting.plotting_functions_modeling_results.</span></span><span class="sig-name descname"><span class="pre">feature_importance_plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f_scores</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modeling_group</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalized_score</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#src.Plotting.plotting_functions_modeling_results.feature_importance_plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>This plot shows the feature importance scores in a bar chart</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.Plotting.plotting_functions_modeling_results.gather_args">
+<span class="sig-prename descclassname"><span class="pre">src.Plotting.plotting_functions_modeling_results.</span></span><span class="sig-name descname"><span class="pre">gather_args</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#src.Plotting.plotting_functions_modeling_results.gather_args" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.Plotting.plotting_functions_modeling_results.krig_and_actual_ippf_map_plot">
+<span class="sig-prename descclassname"><span class="pre">src.Plotting.plotting_functions_modeling_results.</span></span><span class="sig-name descname"><span class="pre">krig_and_actual_ippf_map_plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_dict</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_dict</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">krig_df</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modeling_group</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#src.Plotting.plotting_functions_modeling_results.krig_and_actual_ippf_map_plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>This plot shows well locations in a scatter plot colored by kriged oil or gas values, and
+actual IPPF values</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.Plotting.plotting_functions_modeling_results.krig_and_actual_ippf_map_plot_v2">
+<span class="sig-prename descclassname"><span class="pre">src.Plotting.plotting_functions_modeling_results.</span></span><span class="sig-name descname"><span class="pre">krig_and_actual_ippf_map_plot_v2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_dict</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_dict</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">krig_df</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modeling_group</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#src.Plotting.plotting_functions_modeling_results.krig_and_actual_ippf_map_plot_v2" title="Permalink to this definition">¶</a></dt>
+<dd><p>This plot shows well locations in a scatter plot colored by kriged oil or gas values, date, and
+actual IPPF values. It also shows a boxplot with the distribution of ippf over time</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.Plotting.plotting_functions_modeling_results.krig_and_actual_ippf_mapbox_plot">
+<span class="sig-prename descclassname"><span class="pre">src.Plotting.plotting_functions_modeling_results.</span></span><span class="sig-name descname"><span class="pre">krig_and_actual_ippf_mapbox_plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_dict</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_dict</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">krig_df</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#src.Plotting.plotting_functions_modeling_results.krig_and_actual_ippf_mapbox_plot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.Plotting.plotting_functions_modeling_results.krig_map_plot">
+<span class="sig-prename descclassname"><span class="pre">src.Plotting.plotting_functions_modeling_results.</span></span><span class="sig-name descname"><span class="pre">krig_map_plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_dict</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_dict</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">krig_df</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modeling_group</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bubble_map</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#src.Plotting.plotting_functions_modeling_results.krig_map_plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>This plot shows well locations in a scatter plot colored by kriged oil or gas values</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.Plotting.plotting_functions_modeling_results.load_krig_data">
+<span class="sig-prename descclassname"><span class="pre">src.Plotting.plotting_functions_modeling_results.</span></span><span class="sig-name descname"><span class="pre">load_krig_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pathlib.Path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modeling_group</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">operator</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'All'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columns</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">pandas.core.frame.DataFrame</span></span></span><a class="headerlink" href="#src.Plotting.plotting_functions_modeling_results.load_krig_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function loads the IDW parquet file and extract Krig data for the given modeling group</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.Plotting.plotting_functions_modeling_results.load_modeling_results">
+<span class="sig-prename descclassname"><span class="pre">src.Plotting.plotting_functions_modeling_results.</span></span><span class="sig-name descname"><span class="pre">load_modeling_results</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pathlib.Path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modeling_group</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">operator</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'All'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">,</span> </span><span class="pre">pandas.core.frame.DataFrame</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.Plotting.plotting_functions_modeling_results.load_modeling_results" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function loads the training results parquet file and the feature importance csv file
+for the given modeling group</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.Plotting.plotting_functions_modeling_results.load_ols_table">
+<span class="sig-prename descclassname"><span class="pre">src.Plotting.plotting_functions_modeling_results.</span></span><span class="sig-name descname"><span class="pre">load_ols_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pathlib.Path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modeling_group</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">pandas.core.frame.DataFrame</span></span></span><a class="headerlink" href="#src.Plotting.plotting_functions_modeling_results.load_ols_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function loads the one-line summary parquet file and filter data by the given
+modeling group and first prod date &gt; 2010-01-01</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.Plotting.plotting_functions_modeling_results.local_routine">
+<span class="sig-prename descclassname"><span class="pre">src.Plotting.plotting_functions_modeling_results.</span></span><span class="sig-name descname"><span class="pre">local_routine</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">argparse.Namespace</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#src.Plotting.plotting_functions_modeling_results.local_routine" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.Plotting.plotting_functions_modeling_results.model_comparison_plot">
+<span class="sig-prename descclassname"><span class="pre">src.Plotting.plotting_functions_modeling_results.</span></span><span class="sig-name descname"><span class="pre">model_comparison_plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_dict</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_dict</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modeling_group</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#src.Plotting.plotting_functions_modeling_results.model_comparison_plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>This plot compares the results, MAE, MSE, and Explained Variance of all regression models</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.Plotting.plotting_functions_modeling_results.pre_processing_results">
+<span class="sig-prename descclassname"><span class="pre">src.Plotting.plotting_functions_modeling_results.</span></span><span class="sig-name descname"><span class="pre">pre_processing_results</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">results_df</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">,</span> </span><span class="pre">dict</span><span class="p"><span class="pre">,</span> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.Plotting.plotting_functions_modeling_results.pre_processing_results" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function selects the most current data from the training results of a given modeling group
+and splits the data into training and testing for each time frame</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.Plotting.plotting_functions_modeling_results.predicted_kriged_vs_actual_plots">
+<span class="sig-prename descclassname"><span class="pre">src.Plotting.plotting_functions_modeling_results.</span></span><span class="sig-name descname"><span class="pre">predicted_kriged_vs_actual_plots</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_dict</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_dict</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">krig_df</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modeling_group</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataset</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#src.Plotting.plotting_functions_modeling_results.predicted_kriged_vs_actual_plots" title="Permalink to this definition">¶</a></dt>
+<dd><p>This scatter plot shows krig and predicted IPPF values on the y-axis and the actual IPPF on the
+x-axis</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.Plotting.plotting_functions_modeling_results.relative_error_plots">
+<span class="sig-prename descclassname"><span class="pre">src.Plotting.plotting_functions_modeling_results.</span></span><span class="sig-name descname"><span class="pre">relative_error_plots</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_dict</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_dict</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modeling_group</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#src.Plotting.plotting_functions_modeling_results.relative_error_plots" title="Permalink to this definition">¶</a></dt>
+<dd><p>These plots shows the distribution of relative error (%), average relative error, and
+standard deviation over time</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.Plotting.plotting_functions_modeling_results.residual_plots">
+<span class="sig-prename descclassname"><span class="pre">src.Plotting.plotting_functions_modeling_results.</span></span><span class="sig-name descname"><span class="pre">residual_plots</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_dict</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_dict</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modeling_group</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_type</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">last_run_date</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#src.Plotting.plotting_functions_modeling_results.residual_plots" title="Permalink to this definition">¶</a></dt>
+<dd><p>This shows the residuals on the vertical axis and the independent variable or number of data
+points on the horizontal axis</p>
+<dl class="simple">
+<dt>plot_type:</dt><dd><p>‘single’ - last time frame
+‘multiple’ - evolution over time</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.Plotting.plotting_functions_modeling_results.results_over_time_plot">
+<span class="sig-prename descclassname"><span class="pre">src.Plotting.plotting_functions_modeling_results.</span></span><span class="sig-name descname"><span class="pre">results_over_time_plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_dict</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_dict</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modeling_group</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_kind</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataset</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#src.Plotting.plotting_functions_modeling_results.results_over_time_plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>This plot shows the evolution with time of MAE, MSE, Avg IPPF, and StDev IPPF for XGBoost model</p>
+</dd></dl>
+
+</div>
+<div class="section" id="src-plotting-plotting-functions-permit-data-review-module">
+<h2>src.Plotting.plotting_functions_permit_data_review module<a class="headerlink" href="#src-plotting-plotting-functions-permit-data-review-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="src-plotting-plotting-functions-presentation-results-module">
+<h2>src.Plotting.plotting_functions_presentation_results module<a class="headerlink" href="#src-plotting-plotting-functions-presentation-results-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-src.Plotting">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-src.Plotting" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="src.ProductionFactor.html" class="btn btn-neutral float-right" title="src.ProductionFactor package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="src.Modeling.html" class="btn btn-neutral float-left" title="src.Modeling package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Joshua Embry.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
